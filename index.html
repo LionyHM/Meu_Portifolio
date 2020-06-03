@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Liony H. Machado - Front-end Developer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Se precisa de um site novo, aqui é o lugar certo, Venha conferir!" />
+    <meta name="keywords" content="web, developer, front, end, desenvolver, criar, site, design, mobile, tecnologia, ti, " />
+    <meta name="author" content="Liony Henrique Machado" />  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Estilo Css -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"> 
+  </head>
+  <body>    
+    <header-template></header-template>
+    <main class="container-fluid" id="container_">
+        <div class="d-none d-lg-block">
+          <article v-if="verificar === false" class="jumbotron section__jumbotron">
+            <div class="container">
+              <h1 class="display-4 mt-5">Sites responsivos e design moderno.</h1>
+              <p class="lead">Um site elegante e com flexibilidade para ser usado por todas plataformas digitais é a solução para você mostrar os seus negócios e projetos
+                para o mundo. Minha preocupação é entregar a melhor experiência para todo tipo de usuário.
+              </p>
+              <a class="btn btn-danger btn-lg" href="formacao.html">Leia mais</a>
+            </div>            
+          </article>
+        </div> 
+        <section>
+          <h2 class="display-4 text-center mt-5 mb-5" style="font-size: 30px">Últimos projetos:</h2>
+          <div class="row text-center" style="font-size: 20px;">
+            <div class="col-sm-6 col-md-4">
+              <p class="lead"><strong>Site - Finans</strong></p>             
+              <a href="projetos/Projeto Finans/index.html" class="text-danger" target="_blank"><img class="mt-3" src="img\finans.png" style="max-width: 100%" alt="projeto finans"></a>
+            </div>
+            <div class="second-card d-none d-sm-block col-sm-6 col-md-4">
+              <p class="lead"><strong>Jogo - Mata Monstro</strong></p> 
+              <a href="projetos/Mata monstro/index.html" class="text-danger" target="_blank"><img class="mt-3" src="img\mata.png" style="width: 100%" alt="jogo mata monstro"></a>              
+            </div>
+            <div class="third-card d-none d-md-block col-md-4">
+              <p class="lead"><strong>Site - Strada</strong></p>
+              <a href="projetos/projeto strada/index.html" class="text-danger" target="_blank"><img class="mt-3" src="img\strada.png" style="max-width: 100%" alt="projeto strada"></a>              
+            </div>
+            <a href="projetos.html" class="btn btn-danger align-items-center ml-auto mr-auto mt-3">Veja mais &raquo</a>
+          </div>
+         </section> 
+        <section class="row justify-content-center">
+          <div class="col-sm-8">
+            <h2 class="display-4 text-center mt-5 mb-3" style="font-size: 30px">Quem sou:</h2>
+            <p class="lead text-center">Olá! Meu nome é Liony Henrique Machado, sou formado em Análise e Desenvolvimento de Sistemas pela Estácio e autodidata por natureza. Descobri minha paixão por desenvolver páginas e aplicações web durante o curso e o amor foi tão grande que só a graduação parecia pouco, comecei a consumir vários cursos online, ler e escutar podcast sobre o assunto. Criei esse portfólio para divulgar meus projetos e conhecimentos, seja muito bem-vindo!</p>
+           </div>                   
+        </section>               
+      </main>
+      <footer-template></footer-template>    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

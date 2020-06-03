@@ -1,0 +1,45 @@
+
+      #container__{
+        font-family: 'Roboto', sans-serif;
+      }
+      .nav__ul li a{
+        font-size: 21px;
+        transition: color .5s;
+      }
+      .nav__ul li a:hover{
+        color: red !important
+      }
+      .section__jumbotron{
+        background-image: url("../img/laptop-coffee.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+      }
+      aside img{
+        width: 6em;
+        margin-bottom: 30px;
+      }
+      .formacao img{
+        width: 20em;
+        align-self: center;
+      }
+      .boder{
+          border: 1px solid black;
+      }
+      .iphone_img img{
+          width: 200px;
+      }
+      .redes_sociais i{
+          font-size: 30px;
+      }
+      .footer_{
+          font-size: 15px;
+      }
+      @media screen and (max-width: 780px){
+        .localizacao img{
+            width: 80%;
+        }
+      }
+
+      

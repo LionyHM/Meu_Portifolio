@@ -1,0 +1,26 @@
+.interface_jogo, .interface_opcoes{	
+	box-shadow: 0px 0px 5px .5px gray;
+}
+.interface_jogo{
+	height: 150px;    
+}
+.interface_opcoes{
+	height: 50%;
+}
+
+.vida{
+	width: 80%;
+	height: 20px;
+	border: solid black 1px;
+}
+.nomeJogador{
+	font-size: 22px;
+}
+.vida_nivel{
+	height: 100%;
+	background-color: green;
+}
+.informacoes{
+    display: flex;
+    flex-direction: column-reverse    
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="https://unpkg.com/vue"></script>
+	<title></title>
+</head>
+<body>
+	<div class="container-fluid p-5" id="app">
+		<div class="row p-3 interface_jogo">
+			<div class="col-6">
+				<p class="text-center nomeJogador">Jogador</p>
+				<div class="vida ml-auto mr-auto">
+					<div class="vida_nivel" :style='addNivelVidaJogador'></div>
+					<p class="text-center nomeJogador">{{nivelVidaJogador}}%</p>
+				</div>
+			</div>
+			<div class="col-6">
+				<p class="text-center nomeJogador">Monstro</p>
+				<div class="vida ml-auto mr-auto">
+					<div class="vida_nivel" :style='addNivelVidaMonstro'></div>
+					<p class="text-center nomeJogador">{{nivelVidaMonstro}}%</p>
+				</div>
+			</div>
+		</div>
+        <template>
+                <p class="text-center font-weight-bolder" :class='estilo'>{{ganhouOuPerdeu}}</p>
+        </template>
+		<div class="row">
+			<div class="col-12 interface_opcoes mt-3 d-flex justify-content-center flex-column flex-sm-row p-2">
+				<div v-if='!iniciarJogo' @click='iniciaJogoBtn()' class="align-self-center">
+					<button class="btn btn-primary h-75">INICIAR NOVO JOGO</button>
+				</div>
+				<template v-else class=" grupo_btn">
+					 <button class="btn btn-danger align-self-center " @click='ataque'>ATAQUE</button>
+					 <button class="btn btn-warning align-self-center ml-2 mt-1 mt-sm-0" @click='danoJogadorEspecial'>ATAQUE ESPECIAL</button>
+					 <button class="btn btn-success align-self-center ml-2 mt-1 mt-sm-0" @click='curarJogador'>CURAR</button>
+					 <button class="btn btn-secondary align-self-center ml-2 mt-1 mt-sm-0" @click='desistirJogo'>DESISTIR</button>
+				</template>
+			</div>
+		</div>
+        <div class="row mt-5">
+            <ul class="informacoes col-sm-12 text-white font-weight-bolder list-unstyled ">
+            </ul>           
+        </div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

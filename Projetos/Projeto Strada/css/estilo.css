@@ -1,0 +1,454 @@
+html, body{
+	width: 100%;
+	font-family: souce-sans, sans-serif, helvetica;
+	line-height: 30px;
+	color: #a2a2a2;
+}
+@font-face{
+	font-family: 'souce-sans'
+	scr: url(../font/sourcesanspro-regular-webfont.woff);
+}
+/* Estilos reutilizaveis*/
+code{
+	font-family: "courier new", monospace;
+}
+.learmore{
+	display: inline-block;
+	text-decoration: none;
+	color: #a2a2a2;	
+	border: solid 2px;
+	border-radius: 5px;
+	padding: 10px 30px;
+	border-color: #ddd;
+	transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+	font-weight: bold;
+	cursor: pointer;
+}
+.learmore:hover{
+	border-color: #00a0a0;
+	color: #00a0a0;
+	border: solid 2px;
+}
+.tituloinicial{
+	font-size: 25px;
+	color: #a0a0a0;
+}
+.tamanho{                 /*Margens, bordas e padding da primeira e segunda section*/
+	margin-top: 50px;
+	padding-bottom: 70px;
+	border-bottom: solid 1px;
+	border-color: #ddd;
+}
+.tamanho2{                 /*Margens, bordas e padding do primeiro, segunda e terceiro article*/
+	margin-top: 50px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px;
+	border-color: #ddd;
+}
+.buttons-colors:hover{
+	background-color: #14b4b4;
+}
+.buttons-colors{
+	background-color: #00a0a0;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	transition: background-color 0.5s ease-in-out;
+}
+.buttons-white{
+	background-color: white;	
+	border-radius: 5px;
+	border: solid 1px;
+	border-color: #a0a0a0;
+}
+/* Fim dos Estilos reutilizaveis*/
+#header{
+	width: 400px;
+	height: 100%;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	position: fixed;
+	background-position: left;
+}
+.telaesquerda{
+	width: 300px;
+	margin-top: 80px;
+}
+/*Estilização da tela a estatica que fica a esquerda do usuario*/
+.telaesquerda h2{
+	color: rgba(245,245,245,0.9);
+	font-size: 20px;
+	text-align: right;
+	font-weight: normal;
+	line-height: 40px;
+}
+.telaesquerda h2 strong{
+	color: white;
+}
+.telaesquerda h2 em{
+	text-decoration: underline;
+}
+.imgredonda{
+	margin-left: 170px;
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	background-image: url(../img/avatar.jpg)
+}
+.linkavatar{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+}
+/* Fim da estilização da tela esquerda*/
+/*Estilização da tela inicial que fica a direita do usuario*/
+.teladireita{
+	margin: 0 0 0 460px;
+	width: 800px;
+	height: auto;
+	padding: 100px 0 0 0;	
+	box-sizing: border-box;
+}
+#primeirotexto{
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 80px;
+}
+#primeirotexto h1{
+	font-size: 30px;
+	color: #a0a0a0;
+}
+/* Fim da estilização da tela inicial direita*/
+/*Etilização da primeira seçtion da página*/
+.card{
+	display: inline-block;
+}
+.card img{
+	width: 360px;
+	margin-right: 35px;
+}
+.card img:hover{
+	background-color: rgb(0,0,0,0.5);
+}
+
+/* Fim  da etilização da primeira seçtion da página*/
+/*Edição do formulario*/
+#name, #email{
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f5f5f5;
+	padding: 2px 10px;
+	box-sizing: border-box;
+	outline: none;
+}
+#name:focus, #email:focus, #textarea:focus{
+	border: solid 2px;
+	border-color: #00a0a0;
+	border-radius: 5px;	
+}
+#name{
+	margin-right: 20px;
+}
+#textarea{
+	display: block;
+	margin-top: 20px;
+	width: 420px;
+	height: 130px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	padding: 2px 10px;	
+	font-size: 15px;
+	box-sizing: border-box;
+	border: none;
+	resize: none;
+	outline: none;
+}
+#submit{
+	background-color: white;
+	font-size: 14px;
+	float: left;
+	margin-top: 60px;
+}
+.contact{
+	position: relative;	
+	left: 350px;
+	top: -100px;
+	display: inline-block;
+}
+.pcontato{
+	margin-bottom: 20px;
+	color: #a0a0a0;
+}
+.form{
+	margin-bottom: -110px;
+}
+/*Fim da estilização do formulario*/
+/*Estilização do primeiro article da página*/
+.elements .code{
+	border: solid 0.5px;
+	border-color: #ddd;
+	padding: 2px 10px;
+	border-radius: 3px;
+	background-color: #f5f5f5;
+}
+.elements a{
+	color: #00ced1;
+}
+/*Fim da estilização do primeiro article da página*
+/*Estilização do segundo article(heading and subtitle)*/
+.sub-titulo h4, .sub-titulo h5{
+	margin-bottom: -20px;
+}
+.sub-titulo p{
+	margin-top: 40px;
+}
+.subtitulo{
+	font-weight: normal;
+}
+/*Fim da estilização do segundo article(heading and subtitle)*/
+/*Estilização da blockquote*/
+.citacao{
+	border-left: solid 6px;
+	padding-left: 20px;
+	border-color: #e0e0e0;
+}
+/* Fim da estilização da blockquote*/
+/* Estilização do Preformatted*/
+.codebox{
+	border: solid 0.3px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background-color: #f5f5f5;
+}
+/* Fim estilização do Preformatted*/
+/* Estilização das lists*/
+.list-unordered{
+
+
+}
+.list-unordered ul{
+
+}
+.list-ordered{
+	margin-top: -170px;
+	margin-left: 400px;
+} 
+.list-definition {
+	margin-top: -80px;
+	display: inline-block;
+
+}
+.list-ordered li, .list-unordered li{
+	margin-left: -20px;
+}
+.list-definition dd:last-child{
+	border: none;
+}
+.list-definition dd{
+	border-bottom: solid 1px;
+	border-color: #e0e0e0;
+	padding: 8px 150px 8px 0px;
+	margin-left: 0;
+}
+.icons{
+	float: right;
+	margin-right: 30%;
+}
+.icons h5{
+	margin-left: 50px;
+}
+.icons li{
+	color: #00a0a0;
+	font-size: 23px;
+	display: inline-block;
+	margin-right: 20px;
+}
+/*Fim estilização das lists */
+/*Estilização dos botões da actions*/
+.allbuttons1{
+	margin-bottom: -160px;
+}
+.default, .defaultcolor, .defaultg, .defaultcolorg, .small, .smallcolor, .smallg, .smallcolorg{
+	cursor: pointer;
+}
+.col-button1{
+	display: inline-block;
+}
+.button-line1{
+display: inline-block;
+margin-bottom: 25px;
+}
+.button-line2, .button-line3{
+	margin-bottom: 25px;
+}
+.button-line2 .small{
+	padding: 5px 20px;
+}
+.button-line3 .defaultcolor, .button-line4 .defaultcolorg{
+	display: block;
+	margin-bottom: 15px;
+}
+.defaultcolor{
+	margin-right: 15px;
+}
+.default, .defaultcolor{
+	width: 130px;
+	height: 40px;
+}
+.defaultg, .defaultcolorg, .smallcolorg, .smallg{
+	width: 300px;
+	height: 40px;
+}
+.smallcolor{
+	margin-right: 10px;
+}
+.small, .smallcolor{
+	width: 110px;
+	height: 35px;
+}
+.col-button2{
+	float: right;
+	margin: 120px 100px 0px;
+}
+.button-line5 .smallcolor, .button-line6 .smallcolorg{
+	display: block;
+}
+.button-line5{
+	margin-bottom: 50px;
+}
+.smallcolor, .smallcolorg{
+	margin-bottom: 10px;
+}
+/*Final da estilização dos botões da actions*/
+/*Inicio da estilização da primeira tabela*/
+.primeira-tabela{
+	margin-top: 220px;
+}
+.tabela{
+	font-size: 15px;
+	color: grey;
+	border-collapse: collapse;
+	font-weight: normal;
+}
+.tabela h5{
+	font-size: 25px;
+}
+.tabela th{
+	padding: 0 0 10px 10px;
+	text-align: left;
+}
+.tabela td{
+	padding: 10px 10px;
+	width: 500px;
+}
+.table-line-color{
+	background-color: #f5f5f5;
+}
+/*Final da estilização da primeira tabela*/
+/* Inicio da estilização da segunda tabela*/
+.segunda-tabela{
+	margin: 80px 0;
+}
+.segunda-tabela .tabela td{
+	border: solid 1px #ddd;
+}
+/*Final da estilização da segunda tabela*/
+/*Inicio da estilização do segunda formulario*/
+#user, #mail{
+	display: inline-block;
+	width: 48.7%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f5f5f5;
+	padding: 2px 10px;
+	box-sizing: border-box;
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+#user{
+	margin-right: 16px;
+}
+.selecao-category{
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f5f5f5;
+	padding: 2px 10px;
+	box-sizing: border-box;
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+#radio{
+	display: inline-block;
+	margin-right: 140px;
+}
+
+#copyemail, #checkedrobot{
+	display: inline-block;
+	margin-top: 15px;
+}
+#copyemail{
+	margin-right: 15%;
+}
+#messagebox{
+	margin-top: 20px;
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-color: #f5f5f5;
+	border: none;
+	border-radius: 5px;
+}
+#user:focus, #mail:focus, #messagebox:focus, .selecao-category:focus{
+	border: solid 3px #00a0a0;
+	border-color: #00a0a0;
+	border-radius: 5px;	
+}
+#enviar{
+	background-color: #00a0a0;
+	color: white;
+	border: none;
+	padding: 15px 20px;
+	margin-right: 10px;
+	transition: background-color .5s ease-in-out;
+}
+#enviar:hover{
+	background-color: #14b4b4;
+}
+#reset{
+	background-color: white;
+	padding: 15px 50px;
+}
+#enviar, #reset{
+	margin-top: 20px;
+	cursor: pointer;
+}
+/*Fim do formulario 2*/
+/*inicio dos cards 2*/
+.group-card img{
+	max-width: 230px;
+	margin-right: 22px;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.group-card{
+	margin: 10px 0 10px 0;
+}
+/* Fim dos cards 2*/
+/*Inicio do texto com avatar*/
+.avatartext{
+	float: left;
+	margin: 10px 20px 5px 0;
+	border-radius: 6px;
+}
+.avatartext2{
+	float: right;
+	margin: 10px 0 5px 20px;
+	border-radius: 6px;	
+}
