@@ -13,7 +13,19 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="js.js">            
         </script>
-        
+        <style>
+            @media screen and (max-width: 500px){
+            .table{
+                font-size:13px !important;
+                margin-left: -10px;
+            }
+            .table button{
+                padding: 5px !important;
+                font-size: 10px;
+                border: 0;
+            }
+            }
+        </style>
     </head>
     <body onload="criarTabela()"> 
          <nav class="navbar navbar-expand-md navbar-dark bg-primary">
@@ -90,7 +102,7 @@
                         <input type="text" class="valor form-control" placeholder="Valor">
                     </div>                       
                     <div class="col-md-2">
-                        <button class=" btn btn-primary mt-2 "  style=" font-weight: 800" onclick="pesquisarDespesa()"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-primary mt-2 "  style=" font-weight: 800" onclick="pesquisarDespesa()"><i class="fas fa-search"></i></button>
                     </div>     
                 </div>
             
